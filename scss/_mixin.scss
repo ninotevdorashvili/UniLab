@@ -1,0 +1,26 @@
+@mixin fontstyle ($size,$fam,$weight,$col) {
+    font-size: $size;
+    font-family: $fam;
+    font-weight: $weight;
+    color: $col;
+}
+@mixin fontstyle2 ($size,$fam,$col) {
+    font-size: $size;
+    font-family: $fam;
+    color: $col;
+}
+@mixin bgimage ($size:cover,$rep:no-repeat,$pos:center) {
+    
+    background-size: $size;
+    background-repeat: $rep;
+    background-position: $pos;
+}
+@mixin flex ($flex, $just, $align) {
+    display: $flex;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin column($felx:flex, $colum:column) {
+    display: $felx;
+    flex-direction: $colum;
+}
